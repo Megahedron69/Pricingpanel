@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tiers</title>
+</head>
+<body>
+        <div class="panels">
+        <div class="panel1">
+            <img src="icon1.png" alt="icon1">
+            <h3>PERSONAL</h3>
+            <ul class="features">
+                <li>CUSTOM DOMAINS</li>
+                <li>SLEEP AFTER 30 MINS OF INACTIVITY</li>
+            </ul>
+            <span class="price">FREE</span>
+            <a href="#" target="_blank">SIGN UP</a>
+        </div>
+
+        <div class="panel2">
+            <img src="icon2.png" alt="icon1">
+            <h3>SMALL TEAM</h3>
+            <ul class="features">
+                <li>NEVER SLEEPS</li>
+                <li>Multiple workers for more powerful apps</li>
+            </ul>
+            <span class="price">&#36 150</span>
+            <a href="#" target="_blank">FREE TRIAL</a>
+        </div>
+
+        <div class="panel3">
+            <img src="icon3.png" alt="icon1">
+            <h3>Enterprise</h3>
+            <ul class="features">
+                <li>Dedicated</li>
+                <li>Simple horizontal scalability</li>
+            </ul>
+            <span class="price">&#36 400</span>
+            <a href="#" target="_blank">FREE TRIAL</a>
+        </div>
+     </div>
+</body>
+</html>
+
+<style>
+    */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+    body{
+        text-transform: uppercase;
+        background-color: #016ff9;
+        font-family: serif;
+    }
+    
+    .panels{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:baseline;
+        background-color: white;
+        border: 1px solid #016ff9;
+        border-radius: 12px;
+        text-align: center;
+        padding: 15px 25px;
+        width: 100%;
+        max-width: 960px;
+        margin: auto;    
+        margin-top: 50px;
+        color: #016ff9;
+    }
+
+    h3{
+        color: grey;
+        margin-bottom: 25px;
+    }
+    img{
+        margin-bottom: 25px;
+        max-width: 100%;
+        text-align: center;
+    }
+    ul{
+        list-style-type: none;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+    ul li{
+        border-top: 1px solid #e1f1ff;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        padding: 15px;
+        font-size: 14px;
+    }
+    span{
+        display: block;
+        font-size: 27px;
+        text-align: center;
+        margin-top: 25px ;
+        font-weight: 800;
+    }
+    .panel3 span,a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    a{
+        border: 1px solid #9dd1ff;
+        border-radius: 10px;
+        color: #348efe;
+        display: inline-block;
+        padding: 15px 35px;
+        text-decoration: none;
+        margin: 25px 0;
+        transition: background-color 200ms ease-in-out;
+    }
+
+    a:hover{
+        background-color:#c3dcfae5 ;
+    }
+    
+    .panel2 a{
+        background-color: #348efe;
+        color: white;
+        transition: background-color 200ms ease-out;
+    }
+    .panel2 a:hover{
+        background-color: #197efa;
+    }
+
+    @media (max-width:1018px){
+        .panels{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+
+</style>
